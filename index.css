@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500&family=Potta+One&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav{
+  background-color:#d1ccc0;
+  width: 400px;
+  max-height: 100vh;
+  border-right: 2px solid #777;
+}
+
+nav header{
+  padding: 15px;
+}
+
+nav a{
+  color: #000;
+  display: block;
+  padding: 15px;
+  border-top: 2px solid #777;
+  text-decoration: none;
+}
+
+main{
+  background-color: #f7f1e3;
+  flex: 1;
+  max-height: 100vh;
+  overflow-y: scroll;
+  /* or overflow: auto;*/
+}
+
+section{
+  padding: 30px; 
+  line-height: 2;
+}
+
+section p{
+ padding: 20px; 
+}
+
+header{
+  font-size: 30px;
+  padding: 20px;
+  font-weight: 400;
+}
+
+pre code{
+  background-color: #ddd;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
+
+@media (max-width: 600px){
+  
+  body{
+    flex-direction: column;
+  }
+  
+  nav{
+    border-right: none;
+    border-bottom: 2px solid #777;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+  }
+  
+  main{
+    width: 100%;
+    height: auto;
+  }
+  
+}
